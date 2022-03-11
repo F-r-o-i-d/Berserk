@@ -1,0 +1,35 @@
+.wrapper{
+    margin: 0 auto;
+
+}
+.wrapper h1{
+    color: #fff;
+    text-align: center;
+    margin-top: 5vh;
+}
+
+.grid-item {
+    background-color: dodgerblue;
+    color: white;
+
+    height: 4rem;
+  }
+  
+.grid-item {
+    padding: 1%;
+    border-radius: 5px;
+    max-width: 200px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    margin-bottom: 5%;
+}
+  
+@media (min-width: 600px) {
+    .cards { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 900px) {
+    .cards { grid-template-columns: repeat(3, 1fr); }
+}
